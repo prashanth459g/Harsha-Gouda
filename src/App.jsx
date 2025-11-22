@@ -5,15 +5,17 @@ import Research from './components/Research';
 import Publications from './components/Publications';
 import CV from './components/CV';
 import Resources from './components/Resources';
-import Contact from './components/Contact';
+import Updates from './components/Updates';
 
-function App() {
+const App = () => {
   const [activeSection, setActiveSection] = useState('home');
 
-  const renderSection = () => {
+  const renderContent = () => {
     switch (activeSection) {
       case 'home':
-        return <Hero setActiveSection={setActiveSection} />;
+        return <Hero />;
+      case 'updates':
+        return <Updates />;
       case 'research':
         return <Research />;
       case 'publications':
@@ -22,18 +24,16 @@ function App() {
         return <CV />;
       case 'resources':
         return <Resources />;
-      case 'contact':
-        return <Contact />;
       default:
-        return <Hero setActiveSection={setActiveSection} />;
+        return <Hero />;
     }
   };
 
   return (
     <Layout activeSection={activeSection} setActiveSection={setActiveSection}>
-      {renderSection()}
+      {renderContent()}
     </Layout>
   );
-}
+};
 
 export default App;

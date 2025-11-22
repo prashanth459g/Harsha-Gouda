@@ -17,6 +17,23 @@ export const profile = {
     ]
 };
 
+export const updates = [
+    {
+        id: 1,
+        date: "November 2025",
+        title: "Presented at Metabolomics 2025",
+        description: "Presented our latest work on dietary biomarkers at the annual Metabolomics conference.",
+        image: null // Placeholder for image URL
+    },
+    {
+        id: 2,
+        date: "October 2025",
+        title: "New Paper Published",
+        description: "Our work on microbiome mediated metabolism of food is now out in Current Opinions in Microbiology.",
+        image: null
+    }
+];
+
 export const education = [
     {
         degree: "Postdoctoral Researcher",
@@ -44,62 +61,92 @@ export const projects = [
     {
         title: "Querying Nutritional Dark Metabolome",
         period: "Jul 2024 - Present",
-        description: "Developed a mass-spectrometry based estimation of dietary exposure/intake from public metabolomics datasets available on GNPS/MassIVE repository. This foodomics approach is applied to clinical datasets (Crohn’s, MASLD, Alzheimer’s) to identify dietary exposure linked to disease phenotypes."
+        description: "Developed a mass-spectrometry based estimation of dietary exposure/intake from public metabolomics datasets available on GNPS/MassIVE repository. This foodomics approach is applied to clinical datasets (Crohn’s, MASLD, Alzheimer’s) to identify dietary exposure linked to disease phenotypes.",
+        subprojects: [
+            {
+                title: "Dietary Exposure Estimation",
+                description: "Estimating dietary intake from public metabolomics datasets."
+            },
+            {
+                title: "Clinical Dataset Analysis",
+                description: "Applying foodomics to Crohn’s, MASLD, and Alzheimer’s datasets."
+            }
+        ]
     },
     {
         title: "Molecular Mechanisms of Coenzyme B12 Trafficking",
         period: "2019 - 2024",
-        description: "Elucidated the role of small molecule linked protein-protein communication in human cobalamin trafficking pathway. Discovered an unconventional molecular mimicry strategy by proteins to preserve precious cofactors."
+        description: "Elucidated the role of small molecule linked protein-protein communication in human cobalamin trafficking pathway. Discovered an unconventional molecular mimicry strategy by proteins to preserve precious cofactors.",
+        subprojects: [
+            {
+                title: "Protein-Protein Communication",
+                description: "Role of small molecule interactions in regulating interprotein communication."
+            },
+            {
+                title: "Molecular Mimicry Strategy",
+                description: "Unconventional strategy by proteins to preserve cofactors."
+            }
+        ]
     },
     {
         title: "Minimal Protection-Based Glycosylation",
         period: "2014 - 2018",
-        description: "Minimal protection and deprotection strategy methods for glycosylation"
+        description: "Minimal protection and deprotection strategy methods for glycosylation",
+        subprojects: [
+            {
+                title: "Synthetic Methodology",
+                description: "Development of oligosaccharide synthesis strategies."
+            }
+        ]
     }
 ];
 
-export const publications = [
-    {
-        text: "Gouda H, et al. Learning molecular fingerprints of foods to decode dietary intake from untargeted metabolomics data. (Manuscript in revision)",
-        url: "https://www.researchsquare.com/article/rs-7652253/v1"
-    },
-    {
-        text: "Gouda H, Agongo J, Dorrestein P. The Mass Spectrometry of Microbiome Mediated Metabolism of Food – Challenges and Opportunities. (2025) Current Opinions in Microbiology.",
-        url: "https://www.sciencedirect.com/science/article/abs/pii/S1369527425000621?via%3Dihub"
-    },
-    {
-        text: "Agongo J, Gouda H, et al. Quantitative Food Biomarkers Enable Dietary Ontology Referencing Across 500 Foods and Human Plasma. (Manuscript in revision)",
-        url: null // Manuscript in revision - no published link yet
-    },
-    {
-        text: "Mannochio-Russo H, ... Gouda H, et al. Bridging Complexity and Accessibility in Metabolomics with MetaboApps. (ChemRxiv, 2025)",
-        url: null // ChemRxiv preprint - need link
-    },
-    {
-        text: "Rajkumar P, ... Gouda H, et al. Retrieval-Augmented Language Models Enable Scalable Chemical Source Classification in Metabolomics Workflows. (Manuscript in revision)",
-        url: null // Manuscript in revision - no published link yet
-    },
-    {
-        text: "Gouda H, et al. Differential utilization of vitamin B12-dependent and independent pathways for propionate metabolism across human cells. (2024) J. Biol. Chem.",
-        url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mP5z-HsAAAAJ&citation_for_view=mP5z-HsAAAAJ:UeHWp8X0CEIC"
-    },
-    {
-        text: "Gouda H, et al. Coordination chemistry controls coenzyme B12 synthesis in human Adenosine triphosphate:Cob(I)alamin Adenosyltransferase. (2023) Inorg. Chem.",
-        url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mP5z-HsAAAAJ&citation_for_view=mP5z-HsAAAAJ:eQOLeE2rZwMC"
-    },
-    {
-        text: "Mascarenhas R, Ruetz M, Gouda H, et al. Architecture of the human G-protein-methylmalonyl-CoA mutase nano assembly for B12 delivery and repair. (2023) Nat. Commun.",
-        url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mP5z-HsAAAAJ&citation_for_view=mP5z-HsAAAAJ:KlAtU1dfN6UC"
-    },
-    {
-        text: "Gouda H, et al. Bivalent molecular mimicry by ADP protects metal redox state and promotes coenzyme B12 repair. (2023) Proc. Natl. Acad. Sci. U S A.",
-        url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mP5z-HsAAAAJ&citation_for_view=mP5z-HsAAAAJ:0EnyYjriUFMC"
-    },
-    {
-        text: "Ruetz M, ... Gouda H, et al. Itaconyl-CoA forms a stable biradical in methylmalonyl-CoA mutase and derails its activity and repair. (2019) Science.",
-        url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mP5z-HsAAAAJ&citation_for_view=mP5z-HsAAAAJ:u5HHmVD_uO8C"
-    }
-];
+export const publications = {
+    postdoc: [
+        {
+            text: "Gouda H, et al. Learning molecular fingerprints of foods to decode dietary intake from untargeted metabolomics data. (Manuscript in revision)",
+            url: "https://www.researchsquare.com/article/rs-7652253/v1"
+        },
+        {
+            text: "Gouda H, Agongo J, Dorrestein P. The Mass Spectrometry of Microbiome Mediated Metabolism of Food – Challenges and Opportunities. (2025) Current Opinions in Microbiology.",
+            url: "https://www.sciencedirect.com/science/article/abs/pii/S1369527425000621?via%3Dihub"
+        },
+        {
+            text: "Agongo J, Gouda H, et al. Quantitative Food Biomarkers Enable Dietary Ontology Referencing Across 500 Foods and Human Plasma. (Manuscript in revision)",
+            url: null
+        },
+        {
+            text: "Mannochio-Russo H, ... Gouda H, et al. Bridging Complexity and Accessibility in Metabolomics with MetaboApps. (ChemRxiv, 2025)",
+            url: null
+        },
+        {
+            text: "Rajkumar P, ... Gouda H, et al. Retrieval-Augmented Language Models Enable Scalable Chemical Source Classification in Metabolomics Workflows. (Manuscript in revision)",
+            url: null
+        }
+    ],
+    graduate: [
+        {
+            text: "Gouda H, et al. Differential utilization of vitamin B12-dependent and independent pathways for propionate metabolism across human cells. (2024) J. Biol. Chem.",
+            url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mP5z-HsAAAAJ&citation_for_view=mP5z-HsAAAAJ:UeHWp8X0CEIC"
+        },
+        {
+            text: "Gouda H, et al. Coordination chemistry controls coenzyme B12 synthesis in human Adenosine triphosphate:Cob(I)alamin Adenosyltransferase. (2023) Inorg. Chem.",
+            url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mP5z-HsAAAAJ&citation_for_view=mP5z-HsAAAAJ:eQOLeE2rZwMC"
+        },
+        {
+            text: "Mascarenhas R, Ruetz M, Gouda H, et al. Architecture of the human G-protein-methylmalonyl-CoA mutase nano assembly for B12 delivery and repair. (2023) Nat. Commun.",
+            url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mP5z-HsAAAAJ&citation_for_view=mP5z-HsAAAAJ:KlAtU1dfN6UC"
+        },
+        {
+            text: "Gouda H, et al. Bivalent molecular mimicry by ADP protects metal redox state and promotes coenzyme B12 repair. (2023) Proc. Natl. Acad. Sci. U S A.",
+            url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mP5z-HsAAAAJ&citation_for_view=mP5z-HsAAAAJ:0EnyYjriUFMC"
+        },
+        {
+            text: "Ruetz M, ... Gouda H, et al. Itaconyl-CoA forms a stable biradical in methylmalonyl-CoA mutase and derails its activity and repair. (2019) Science.",
+            url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mP5z-HsAAAAJ&citation_for_view=mP5z-HsAAAAJ:u5HHmVD_uO8C"
+        }
+    ]
+};
 
 export const awards = [
     "Rackham Predoctoral Fellowship (2023-2024) - University of Michigan",
@@ -108,14 +155,23 @@ export const awards = [
     "INSPIRE Fellowship (2014-2019) - DST India"
 ];
 
-export const resources = [
-    { name: "GNPS2", url: "https://gnps2.org", desc: "GNPS data anlaysis workflows" },
-    { name: "MassIVE", url: "https://massive.ucsd.edu", desc: "Metabolomics data repository" },
-    { name: "GNPS-Dashboard", url: "https://dashboard.gnps2.org/", desc: "GNPS tool for raw LC-MS/MS data visualization" },
-    { name: "FASST", url: "https://fasst.gnps2.org/fastsearch/", desc: "USI based MS/MS data search at repository scale" },
-    { name: "Library", url: "https://library.gnps2.org/", desc: "GNPS2 library spectras" },
-    { name: "MassQL", url: "https://massql.gnps2.org/", desc: "MassQL Sandbox to aid query design" },
-    { name: "QC-MXP", url: "https://broadhurstdavid.github.io/QC-MXP/", desc: "Repeat injection based batch correction for metabolomics data" },
-    { name: "MZmine", url: "https://github.com/mzmine/mzmine?tab=readme-ov-file", desc: "Software for untargeted metabolmics feature extraction & data analysis" },
-    
-];
+export const resources = {
+    metabolomics: [
+        { name: "GNPS2", url: "https://gnps2.org", desc: "GNPS data anlaysis workflows" },
+        { name: "MassIVE", url: "https://massive.ucsd.edu", desc: "Metabolomics data repository" },
+        { name: "GNPS-Dashboard", url: "https://dashboard.gnps2.org/", desc: "GNPS tool for raw LC-MS/MS data visualization" },
+        { name: "FASST", url: "https://fasst.gnps2.org/fastsearch/", desc: "USI based MS/MS data search at repository scale" },
+        { name: "Library", url: "https://library.gnps2.org/", desc: "GNPS2 library spectras" },
+        { name: "MassQL", url: "https://massql.gnps2.org/", desc: "MassQL Sandbox to aid query design" },
+        { name: "QC-MXP", url: "https://broadhurstdavid.github.io/QC-MXP/", desc: "Repeat injection based batch correction for metabolomics data" },
+        { name: "MZmine", url: "https://github.com/mzmine/mzmine?tab=readme-ov-file", desc: "Software for untargeted metabolmics feature extraction & data analysis" }
+    ],
+    microscopy: [
+        // Placeholder for Microscopy tools
+        { name: "ImageJ", url: "https://imagej.nih.gov/ij/", desc: "Image processing program" }
+    ],
+    biochemistry: [
+        // Placeholder for Biochemistry tools
+        { name: "Expasy", url: "https://www.expasy.org/", desc: "Bioinformatics resource portal" }
+    ]
+};
