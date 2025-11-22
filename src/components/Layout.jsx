@@ -63,26 +63,6 @@ const Layout = ({ children, activeSection, setActiveSection }) => {
                                             : 'text-slate-600 hover:bg-white hover:text-slate-900 hover:shadow-sm'
                                         }
                   `}
-                                >
-                                    <Icon size={18} />
-                                    {item.label}
-                                </button>
-                            );
-                        })}
-                    </nav>
-
-                    <div className="mt-auto pb-8 pt-4 text-xs text-slate-400 border-t border-slate-200">
-                        &copy; {new Date().getFullYear()} Harsha Gouda
-                    </div>
-                </aside>
-
-                {/* Overlay for mobile */}
-                {isMobileMenuOpen && (
-                    <div
-                        className="fixed inset-0 bg-black/20 z-30 md:hidden backdrop-blur-sm"
-                        onClick={() => setIsMobileMenuOpen(false)}
-                    />
-                )}
 
                 {/* Main Content */}
                 <main className="flex-1 min-w-0 pt-20 md:pt-0">
@@ -92,10 +72,10 @@ const Layout = ({ children, activeSection, setActiveSection }) => {
                 </main>
             </div>
 
-            {/* Footer - Appears on all pages */}
-            <Footer />
-        </div>
-    );
+                    {/* Footer - Appears on all pages */}
+                    <Footer />
+            </div>
+            );
 };
 
-export default Layout;
+            export default Layout;
