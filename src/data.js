@@ -3,7 +3,7 @@ export const profile = {
     role: "Postdoctoral Researcher",
     department: "Dorrestein Laboratory",
     institution: "University of California, San Diego",
-    emails: ["hgouda@health.ucsd.edu", "harsha.gouda11@gmail.com"],
+    emails: ["hgouda@health.ucsd.edu"],
     socials: {
         scholar: "https://scholar.google.com/citations?user=mP5z-HsAAAAJ&hl=en"
     },
