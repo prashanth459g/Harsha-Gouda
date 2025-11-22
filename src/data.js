@@ -111,5 +111,11 @@ export const awards = [
 export const resources = [
     { name: "GNPS2", url: "https://gnps2.org", desc: "GNPS data anlaysis workflows" },
     { name: "MassIVE", url: "https://massive.ucsd.edu", desc: "Metabolomics data repository" },
-    { name: "GNPS-Dashboard", url: "https://www.ebi.ac.uk/metabolights/", desc: "Database for Metabolomics experiments and derived information" }
+    { name: "GNPS-Dashboard", url: "https://dashboard.gnps2.org/", desc: "GNPS tool for raw LC-MS/MS data visualization" },
+    { name: "FASST", url: "https://fasst.gnps2.org/fastsearch/", desc: "USI based MS/MS data search at repository scale" },
+    { name: "Library", url: "https://library.gnps2.org/", desc: "GNPS2 library spectras" },
+    { name: "MassQL", url: "https://massql.gnps2.org/", desc: "MassQL Sandbox to aid query design" },
+    { name: "QC-MXP", url: "https://broadhurstdavid.github.io/QC-MXP/", desc: "Repeat injection based batch correction for metabolomics data" },
+    { name: "MZmine", url: "https://github.com/mzmine/mzmine?tab=readme-ov-file", desc: "Software for untargeted metabolmics feature extraction & data analysis" },
+    
 ];
