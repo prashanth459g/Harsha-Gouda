@@ -20,7 +20,7 @@ export const profile = {
 export const updates = [
     {
         id: 1,
-        date: "November 2025",
+        date: "June 2025",
         title: "Presented at Metabolomics 2025",
         description: "Presented our latest work on dietary biomarkers at the annual Metabolomics conference.",
         image: null // Placeholder for image URL
