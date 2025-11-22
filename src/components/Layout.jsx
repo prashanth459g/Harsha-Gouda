@@ -37,7 +37,7 @@ const Layout = ({ children, activeSection, setActiveSection }) => {
 
                 {/* Sidebar Navigation */}
                 <aside className={`
-          fixed md:sticky top-0 left-0 h-screen w-64 bg-slate-50 border-r border-slate-200
+          fixed md:sticky top-0 left-0 h-screen w-64 bg-slate-50 border-r border-slate-200 
           transform transition-transform duration-300 ease-in-out z-40
           ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}
           pt-20 md:pt-12 px-6 flex flex-col
@@ -47,7 +47,7 @@ const Layout = ({ children, activeSection, setActiveSection }) => {
                         <p className="text-slate-500 text-sm mt-2">Postdoctoral Researcher</p>
                     </div>
 
-                    <nav className="space-y-2 flex-1 overflow-y-auto">
+                    <nav className="space-y-2 flex-1 overflow-y-auto pb-8">
                         {navItems.map((item) => {
                             const Icon = item.icon;
                             const isActive = activeSection === item.id;
@@ -63,6 +63,22 @@ const Layout = ({ children, activeSection, setActiveSection }) => {
                                             : 'text-slate-600 hover:bg-white hover:text-slate-900 hover:shadow-sm'
                                         }
                   `}
+                                >
+                                    <Icon size={18} />
+                                    {item.label}
+                                </button>
+                            );
+                        })}
+                    </nav>
+                </aside>
+
+                {/* Overlay for mobile */}
+                {isMobileMenuOpen && (
+                    <div
+                        className="fixed inset-0 bg-black/20 z-30 md:hidden backdrop-blur-sm"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                    />
+                )}
 
                 {/* Main Content */}
                 <main className="flex-1 min-w-0 pt-20 md:pt-0">
@@ -72,10 +88,10 @@ const Layout = ({ children, activeSection, setActiveSection }) => {
                 </main>
             </div>
 
-                    {/* Footer - Appears on all pages */}
-                    <Footer />
-            </div>
-            );
+            {/* Footer - Appears on all pages */}
+            <Footer />
+        </div>
+    );
 };
 
-            export default Layout;
+export default Layout;
