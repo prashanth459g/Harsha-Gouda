@@ -1,6 +1,6 @@
 import React from 'react';
 import { publications } from '../data';
-import { FileText } from 'lucide-react';
+import { FileText, ExternalLink } from 'lucide-react';
 
 const Publications = () => {
     return (
@@ -15,9 +15,21 @@ const Publications = () => {
                         <div className="mt-1.5 flex-shrink-0 text-slate-400 group-hover:text-indigo-600 transition-colors">
                             <FileText size={20} />
                         </div>
-                        <p className="text-slate-700 leading-relaxed">
-                            {pub}
-                        </p>
+                        {pub.url ? (
+                            <a
+                                href={pub.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-slate-700 leading-relaxed hover:text-indigo-600 transition-colors flex items-start gap-2 group/link"
+                            >
+                                <span>{pub.text}</span>
+                                <ExternalLink size={16} className="mt-1 flex-shrink-0 opacity-0 group-hover/link:opacity-100 transition-opacity" />
+                            </a>
+                        ) : (
+                            <p className="text-slate-700 leading-relaxed">
+                                {pub.text}
+                            </p>
+                        )}
                     </div>
                 ))}
             </div>

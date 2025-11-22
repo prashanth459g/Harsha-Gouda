@@ -59,16 +59,46 @@ export const projects = [
 ];
 
 export const publications = [
-    "Gouda H, et al. Learning molecular fingerprints of foods to decode dietary intake from untargeted metabolomics data. (Manuscript in revision)",
-    "Gouda H, Agongo J, Dorrestein P. The Mass Spectrometry of Microbiome Mediated Metabolism of Food – Challenges and Opportunities. (2025) Current Opinions in Microbiology.",
-    "Agongo J, Gouda H, et al. Quantitative Food Biomarkers Enable Dietary Ontology Referencing Across 500 Foods and Human Plasma. (Manuscript in revision)",
-    "Mannochio-Russo H, ... Gouda H, et al. Bridging Complexity and Accessibility in Metabolomics with MetaboApps. (ChemRxiv, 2025)",
-    "Rajkumar P, ... Gouda H, et al. Retrieval-Augmented Language Models Enable Scalable Chemical Source Classification in Metabolomics Workflows. (Manuscript in revision)",
-    "Gouda H, et al. Differential utilization of vitamin B12-dependent and independent pathways for propionate metabolism across human cells. (2024) J. Biol. Chem.",
-    "Gouda H, et al. Coordination chemistry controls coenzyme B12 synthesis in human Adenosine triphosphate:Cob(I)alamin Adenosyltransferase. (2023) Inorg. Chem.",
-    "Mascarenhas R, Ruetz M, Gouda H, et al. Architecture of the human G-protein-methylmalonyl-CoA mutase nano assembly for B12 delivery and repair. (2023) Nat. Commun.",
-    "Gouda H, et al. Bivalent molecular mimicry by ADP protects metal redox state and promotes coenzyme B12 repair. (2023) Proc. Natl. Acad. Sci. U S A.",
-    "Ruetz M, ... Gouda H, et al. Itaconyl-CoA forms a stable biradical in methylmalonyl-CoA mutase and derails its activity and repair. (2019) Science."
+    {
+        text: "Gouda H, et al. Learning molecular fingerprints of foods to decode dietary intake from untargeted metabolomics data. (Manuscript in revision)",
+        url: null // Manuscript in revision - no published link yet
+    },
+    {
+        text: "Gouda H, Agongo J, Dorrestein P. The Mass Spectrometry of Microbiome Mediated Metabolism of Food – Challenges and Opportunities. (2025) Current Opinions in Microbiology.",
+        url: null // Recently published - may need direct link
+    },
+    {
+        text: "Agongo J, Gouda H, et al. Quantitative Food Biomarkers Enable Dietary Ontology Referencing Across 500 Foods and Human Plasma. (Manuscript in revision)",
+        url: null // Manuscript in revision - no published link yet
+    },
+    {
+        text: "Mannochio-Russo H, ... Gouda H, et al. Bridging Complexity and Accessibility in Metabolomics with MetaboApps. (ChemRxiv, 2025)",
+        url: null // ChemRxiv preprint - need link
+    },
+    {
+        text: "Rajkumar P, ... Gouda H, et al. Retrieval-Augmented Language Models Enable Scalable Chemical Source Classification in Metabolomics Workflows. (Manuscript in revision)",
+        url: null // Manuscript in revision - no published link yet
+    },
+    {
+        text: "Gouda H, et al. Differential utilization of vitamin B12-dependent and independent pathways for propionate metabolism across human cells. (2024) J. Biol. Chem.",
+        url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mP5z-HsAAAAJ&citation_for_view=mP5z-HsAAAAJ:UeHWp8X0CEIC"
+    },
+    {
+        text: "Gouda H, et al. Coordination chemistry controls coenzyme B12 synthesis in human Adenosine triphosphate:Cob(I)alamin Adenosyltransferase. (2023) Inorg. Chem.",
+        url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mP5z-HsAAAAJ&citation_for_view=mP5z-HsAAAAJ:eQOLeE2rZwMC"
+    },
+    {
+        text: "Mascarenhas R, Ruetz M, Gouda H, et al. Architecture of the human G-protein-methylmalonyl-CoA mutase nano assembly for B12 delivery and repair. (2023) Nat. Commun.",
+        url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mP5z-HsAAAAJ&citation_for_view=mP5z-HsAAAAJ:KlAtU1dfN6UC"
+    },
+    {
+        text: "Gouda H, et al. Bivalent molecular mimicry by ADP protects metal redox state and promotes coenzyme B12 repair. (2023) Proc. Natl. Acad. Sci. U S A.",
+        url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mP5z-HsAAAAJ&citation_for_view=mP5z-HsAAAAJ:0EnyYjriUFMC"
+    },
+    {
+        text: "Ruetz M, ... Gouda H, et al. Itaconyl-CoA forms a stable biradical in methylmalonyl-CoA mutase and derails its activity and repair. (2019) Science.",
+        url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mP5z-HsAAAAJ&citation_for_view=mP5z-HsAAAAJ:u5HHmVD_uO8C"
+    }
 ];
 
 export const awards = [
