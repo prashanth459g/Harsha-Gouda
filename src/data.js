@@ -109,7 +109,7 @@ export const awards = [
 ];
 
 export const resources = [
-    { name: "GNPS2", url: "https://gnps2.org", desc: "Global Natural Products Social Molecular Networking" },
-    { name: "MassIVE", url: "https://massive.ucsd.edu", desc: "Mass Spectrometry Interactive Virtual Environment" },
-    { name: "MetaboLights", url: "https://www.ebi.ac.uk/metabolights/", desc: "Database for Metabolomics experiments and derived information" }
+    { name: "GNPS2", url: "https://gnps2.org", desc: "GNPS data anlaysis workflows" },
+    { name: "MassIVE", url: "https://massive.ucsd.edu", desc: "Metabolomics data repository" },
+    { name: "GNPS-Dashboard", url: "https://www.ebi.ac.uk/metabolights/", desc: "Database for Metabolomics experiments and derived information" }
 ];
