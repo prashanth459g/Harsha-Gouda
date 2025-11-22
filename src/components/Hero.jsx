@@ -1,6 +1,6 @@
 import React from 'react';
 import { profile } from '../data';
-import { MapPin, Mail, GraduationCap, Send } from 'lucide-react';
+import { MapPin, Mail, GraduationCap } from 'lucide-react';
 
 const Hero = () => {
     return (
@@ -9,7 +9,7 @@ const Hero = () => {
             <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start">
                 <div className="w-32 h-32 md:w-48 md:h-48 rounded-2xl overflow-hidden bg-slate-200 flex-shrink-0 shadow-lg ring-4 ring-white">
                     <img
-                        src="https://via.placeholder.com/400"
+                        src="/profile.jpg"
                         alt={profile.name}
                         className="w-full h-full object-cover"
                     />
@@ -36,7 +36,7 @@ const Hero = () => {
                         </div>
                         <div className="flex items-center gap-3">
                             <Mail size={20} className="text-slate-400" />
-                            <div className="flex gap-4">
+                            <div className="flex flex-wrap gap-4">
                                 {profile.emails.map((email, index) => (
                                     <a
                                         key={index}
@@ -83,83 +83,6 @@ const Hero = () => {
                             {interest}
                         </span>
                     ))}
-                </div>
-            </div>
-
-            {/* Footer Contact Section */}
-            <div className="pt-12 border-t border-slate-200">
-                <h2 className="text-2xl font-bold text-slate-900 mb-8">Get in Touch</h2>
-
-                <div className="grid md:grid-cols-2 gap-12">
-                    {/* Contact Form */}
-                    <div className="space-y-6">
-                        <form className="space-y-4">
-                            <div>
-                                <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">Name</label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all"
-                                    placeholder="Your Name"
-                                />
-                            </div>
-                            <div>
-                                <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">Email</label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all"
-                                    placeholder="your@email.com"
-                                />
-                            </div>
-                            <div>
-                                <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1">Message</label>
-                                <textarea
-                                    id="message"
-                                    rows={4}
-                                    className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all resize-none"
-                                    placeholder="How can I help you?"
-                                />
-                            </div>
-                            <button
-                                type="button"
-                                className="w-full px-6 py-3 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition-colors flex items-center justify-center gap-2 shadow-sm"
-                            >
-                                <Send size={18} />
-                                Send Message
-                            </button>
-                        </form>
-                    </div>
-
-                    {/* Location Map */}
-                    <div className="space-y-6">
-                        <div className="flex items-start gap-4">
-                            <div className="p-3 bg-indigo-50 text-indigo-600 rounded-lg">
-                                <MapPin size={24} />
-                            </div>
-                            <div>
-                                <h3 className="font-bold text-slate-900">Location</h3>
-                                <p className="text-slate-600 mt-1">
-                                    Dorrestein Laboratory<br />
-                                    Skaggs School of Pharmacy<br />
-                                    University of California, San Diego<br />
-                                    9500 Gilman Dr, La Jolla, CA 92093
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="h-64 bg-slate-100 rounded-xl overflow-hidden border border-slate-200 shadow-inner">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.666262473856!2d-117.2366266848606!3d32.88058398094087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc06c4e0e3e3ad%3A0x5250455345345345!2sSkaggs%20School%20of%20Pharmacy%20and%20Pharmaceutical%20Sciences!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
-                                width="100%"
-                                height="100%"
-                                style={{ border: 0 }}
-                                allowFullScreen=""
-                                loading="lazy"
-                                title="Lab Location"
-                            ></iframe>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
