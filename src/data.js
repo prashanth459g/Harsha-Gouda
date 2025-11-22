@@ -54,18 +54,18 @@ export const projects = [
     {
         title: "Minimal Protection-Based Glycosylation",
         period: "2014 - 2018",
-        description: "Developed a synthetic methodology for oligosaccharide synthesis using minimal protection and deprotection strategy with high yielding glycosylation yield."
+        description: "Minimal protection and deprotection strategy methods for glycosylation"
     }
 ];
 
 export const publications = [
     {
         text: "Gouda H, et al. Learning molecular fingerprints of foods to decode dietary intake from untargeted metabolomics data. (Manuscript in revision)",
-        url: null // Manuscript in revision - no published link yet
+        url: "https://www.researchsquare.com/article/rs-7652253/v1"
     },
     {
         text: "Gouda H, Agongo J, Dorrestein P. The Mass Spectrometry of Microbiome Mediated Metabolism of Food – Challenges and Opportunities. (2025) Current Opinions in Microbiology.",
-        url: null // Recently published - may need direct link
+        url: "https://www.sciencedirect.com/science/article/abs/pii/S1369527425000621?via%3Dihub"
     },
     {
         text: "Agongo J, Gouda H, et al. Quantitative Food Biomarkers Enable Dietary Ontology Referencing Across 500 Foods and Human Plasma. (Manuscript in revision)",
