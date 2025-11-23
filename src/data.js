@@ -169,7 +169,7 @@ export const resources = {
     ],
     microscopy: [
         // Placeholder for Microscopy tools
-        { name: "ImageJ", url: "https://imagej.nih.gov/ij/", desc: "Image processing program" }
+        { name: "ImageJ", url: "https://imagej.net/ij/", desc: "Single Image processing software" }
     ],
     biochemistry: [
         // Placeholder for Biochemistry tools
