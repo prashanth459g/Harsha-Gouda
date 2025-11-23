@@ -31,7 +31,7 @@ export const updates = [
         date: "September 2025",
         title: "Opinion article Published",
         description: "The mass spectrometry of microbiome-mediated metabolism of food: challenges and opportunities is now out in Current Opinions in Microbiology.",
-        image: null
+        image: "https://github.com/prashanth459g/Harsha-Gouda/blob/main/public/Current%20Opinion_2025.jpg"
     }
 ];
 
