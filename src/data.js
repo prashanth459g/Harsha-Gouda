@@ -7,29 +7,30 @@ export const profile = {
     socials: {
         scholar: "https://scholar.google.com/citations?user=mP5z-HsAAAAJ&hl=en"
     },
-    about: "My research aims to combine LC-MS/MS based methods and public metabolomics data mining with molecular biology tools for the discovery of dietary metabolites and their role in regulating the diet-gut-host axis. In my own research group, I aim to study metabolic transformation of dietary metabolites by gut microbes and host tissues and identify metabolites that play a critical role in gastrointestinal and its associated diseases.",
+    about: "My research aims to combine LC-MS/MS based metabolomics and data mining with molecular biology tools for the discovery of bioactive dietary metabolites and their role in regulating the diet-gut-host axis. As an independent invistigator, I aim to study metabolic transformation of dietary metabolites by gut microbes and host tissues and identify metabolites that play a critical role in gastrointestinal and its associated chrnoic diseases.",
     interests: [
         "LC-MS/MS Metabolomics",
         "Data Mining & Foodomics",
-        "Diet-Gut-Host Axis",
         "Microbial Metabolites",
         "Gastrointestinal Diseases"
+        "Molecular and Celluar biology"
+        "Mechanistic biochemistry"
     ]
 };
 
 export const updates = [
     {
         id: 1,
-        date: "June 2025",
-        title: "Presented at Metabolomics 2025",
-        description: "Presented our latest work on dietary biomarkers at the annual Metabolomics conference.",
+        date: "March 2025",
+        title: "Poster at ASMS 2025",
+        description: "Presented my latest work from dorrestein laboratory on dietary biomarkers at the annual American society for mass-spetrometry (ASMS) conference.",
         image: null // Placeholder for image URL
     },
     {
         id: 2,
-        date: "October 2025",
-        title: "New Paper Published",
-        description: "Our work on microbiome mediated metabolism of food is now out in Current Opinions in Microbiology.",
+        date: "September 2025",
+        title: "Opinion article Published",
+        description: "The mass spectrometry of microbiome-mediated metabolism of food: challenges and opportunities is now out in Current Opinions in Microbiology.",
         image: null
     }
 ];
