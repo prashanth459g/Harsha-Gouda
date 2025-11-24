@@ -3,6 +3,7 @@ import { resources } from '../data';
 import { ExternalLink, Database, Microscope, Dna } from 'lucide-react';
 
 const Resources = () => {
+    // eslint-disable-next-line no-unused-vars
     const renderResourceSection = (items, title, Icon) => (
         <section className="space-y-6">
             <h3 className="text-xl font-bold text-indigo-700 flex items-center gap-2">

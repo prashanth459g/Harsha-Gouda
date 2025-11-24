@@ -12,8 +12,8 @@ export const profile = {
         "LC-MS/MS Metabolomics",
         "Data Mining & Foodomics",
         "Microbial Metabolites",
-        "Gastrointestinal Diseases"
-        "Molecular and Celluar biology"
+        "Gastrointestinal Diseases",
+        "Molecular and Celluar biology",
         "Mechanistic biochemistry"
     ]
 };
